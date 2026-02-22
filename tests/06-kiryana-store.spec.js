@@ -73,7 +73,7 @@ describe('06 - Kiryana Store Bill: Array Transform (9 pts)', () => {
       expect(calculateTotal('not array')).toBe(0);
       expect(calculateTotal(null)).toBe(0);
     });
-  });
+  }); 
 
   describe('sortByPrice', () => {
     test('sorts ascending (low to high)', () => {
