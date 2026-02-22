@@ -12,7 +12,7 @@
  * ]
  *
  * Methods to explore: .map(), .filter(), .reduce(), .sort(), .join()
- * 
+ *
  * Functions:
  *
  *   1. getItemNames(items)
@@ -51,39 +51,21 @@
  *   formatBill([{name:"Atta",price:40,qty:2}]) // => "Atta x 2 = Rs.80"
  */
 export function getItemNames(items) {
-   if(!Array.isArray(items))  return [];
- return items.map((item) => item.name)
+  // Your code here
 }
 
 export function getAffordableItems(items, maxPrice) {
-   if(!Array.isArray(items) || !Number(maxPrice)) return [];
-   return items.filter((item) => item.price <= maxPrice);
+  // Your code here
 }
 
 export function calculateTotal(items) {
-   if(!Array.isArray(items) || items == "") return 0;
-
- let result = items.reduce((acc, item) => {
-  return acc + item.price * item.qty ;
- },0)
- return result;
+  // Your code here
 }
 
 export function sortByPrice(items, ascending) {
-   if(!Array.isArray(items)) return [];
-
-  let result = [...items].sort((a, b) => {
-      if(ascending){
-        return a.price - b.price; 
-      }else{
-        return b.price - a.price;
-      }
-  })
-  return result;
+  // Your code here
 }
 
 export function formatBill(items) {
- if(!Array.isArray(items) || items == "") return "";
-  let format = items.map((item) => `${item.name} x ${item.qty} = Rs.${item.price * item.qty}`);
-  return format.join("\n"); 
-}  
+  // Your code here
+}
